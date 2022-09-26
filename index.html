@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='description' content='Get random images from a chosen Mars rover and camera!'>
+	<title>Random Rover</title>
+
+	<!-- CSS -->
+	<link rel='stylesheet' href='css/normalize.css'>
+	<link rel='stylesheet' href='css/style.css'>
+
+	<!-- JS -->
+	<script type='text/javascript' src='js/main.js' defer></script>  
+</head>
+<body>
+	<div>
+		<form>
+			<fieldset>
+				<legend>Select a rover:</legend>
+				<div>
+					<input type='radio' id='curiosity' name='rover' checked>
+					<label for='curiosity'>Curiosity</label>
+				</div>
+
+				<div>
+					<input type='radio' id='opportunity' name='rover'>
+					<label for='opportunity'>Opportunity</label>
+				</div>
+
+				<div>
+					<input type='radio' id='spirit' name='rover'>
+					<label for='spirit'>Spirit</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Select a camera:</legend>
+				<div>
+					<input type="radio" name="camera" id="fhaz" class='camera' checked>
+					<label for="fhaz">Front Hazard Avoidance Camera</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="rhaz" class='camera'>
+					<label for="rhaz">Rear Hazad Avoidance Camera</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="mast" class='camera'>
+					<label for="mast">Mast Camera</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="chemcam" class='camera'>
+					<label for="chemcam">Chemistry and Camera Complex</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="mahli" class='camera'>
+					<label for="mahli">Mars Hand Lens Imager</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="mardi" class='camera'>
+					<label for="mardi">Mars Descent Imager</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="navcam" class='camera'>
+					<label for="navcam">Navigation Camera</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="pancam" class='camera' disabled>
+					<label for="pancam">Panoramic Camera</label>
+				</div>
+				<div>
+					<input type="radio" name="camera" id="minites" class='camera' disabled>
+					<label for="minites">Miniature Thermal Emission Spectrometer</label>
+				</div>
+			</fieldset>
+		</form>
+		<button id='submit'>Get Image</button>
+	</div>
+	<section class='img-container'>
+		<img id='image' src='' alt=''>
+	</section>
+	
+</body>
+</html>
